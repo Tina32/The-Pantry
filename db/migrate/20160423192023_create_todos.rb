@@ -1,6 +1,6 @@
-class CreateTodos < ActiveRecord::Migration
+class CreateAddRecipe < ActiveRecord::Migration
   def change
-    create_table :todos do |t|
+    create_table :recipes do |t|
       t.string :title
       t.boolean :completed
 
