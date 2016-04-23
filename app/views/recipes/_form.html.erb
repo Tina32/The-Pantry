@@ -1,11 +1,11 @@
-<%= form_for(@todo, html: { class: "form-horizontal", role: "form" }) do |f| %>
-  <% if @todo.errors.any? %>
+<%= form_for(@recipe, html: { class: "form-horizontal", role: "form" }) do |f| %>
+  <% if @recipe.errors.any? %>
     <div class="alert alert-danger alert-dismissable" role="alert">
       <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-      <h4><%= pluralize(@todo.errors.count, "error") %> prohibited this todo from being saved:</h4>
+      <h4><%= pluralize(@recipe.errors.count, "error") %> prohibited this recipe from being saved:</h4>
 
       <ul>
-      <% @todo.errors.full_messages.each do |msg| %>
+      <% @recipe.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
       </ul>

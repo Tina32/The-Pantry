@@ -1,13 +1,13 @@
 <div class="page-header">
-  <%= link_to todos_path, class: 'btn btn-default' do %>
+  <%= link_to recipes_path, class: 'btn btn-default' do %>
     <span class="glyphicon glyphicon-list-alt"></span>
     Back
   <% end %>
-  <%= link_to @todo, class: 'btn btn-primary' do %>
+  <%= link_to @recipe, class: 'btn btn-primary' do %>
     <span class="glyphicon glyphicon-info-sign"></span>
     Show
   <% end %>
-  <h1>Editing todo</h1>
+  <h1>Editing recipe</h1>
 </div>
 
 <%= render 'form' %>
