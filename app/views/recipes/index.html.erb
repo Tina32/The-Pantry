@@ -13,18 +13,20 @@
             <th>Title</th>
             <th>Ingredients</th>
             <th>Instructions</th>
+            <th>Servings</th>
             <th>Show</th>
-        <th>Edit</th>
-        <th>Destroy</th>
+            <th>Edit</th>
+            <th>Destroy</th>
       </tr>
     </thead>
 
     <tbody>
       <%= content_tag_for(:tr, @recipes) do |recipe| %>
             <td><%= recipe.title %></td>
-
-           <td><%= recipe.instructions %></td>
-           <td><%= link_to 'Show', recipe %></td>
+            <td><%= recipe.ingredients %></td>
+            <td><%= recipe.instructions %></td>
+            <td><%= recipe.servings %></td>
+            <td><%= link_to 'Show', recipe %></td>
        <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
        <td><%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
      <% end %>
