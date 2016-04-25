@@ -39,6 +39,12 @@ class UsersController < ApplicationController
       end
     end
   end
+
+  def verify_correct_user
+       user = User.find_by(id: params[:id])
+       redirect_to root_url, notice: 'Access Denied!' unless current_user?(user)
+     end
+
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json
   def update
