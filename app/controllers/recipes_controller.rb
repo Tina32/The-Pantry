@@ -1,5 +1,6 @@
 class RecipesController < ApplicationController
   before_action :signed_in_user
+  before_action :set_recipe, only: [:show, :edit, :update, :destroy, :toggle_completed]
   before_action :set_recipe, only: [:show, :edit, :update, :destroy]
 
   # GET /recipes
