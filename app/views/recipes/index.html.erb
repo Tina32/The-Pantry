@@ -11,7 +11,7 @@
     <thead>
       <tr>
             <th>Title</th>
-            <th>Ingrediants</th>
+            <th>Ingredients</th>
             <th>Instructions</th>
             <th>Show</th>
         <th>Edit</th>
@@ -22,15 +22,7 @@
     <tbody>
       <%= content_tag_for(:tr, @recipes) do |recipe| %>
             <td><%= recipe.title %></td>
-            <td>
-            <%= link_to("/recipes/#{recipe.id}/toggle_completed") do %>
-             <% if recipe.completed %>
-               <span class="glyphicon glyphicon-ok"></span>
-             <% else %>
-               <span class="glyphicon glyphicon-unchecked"></span>
-             <% end %>
-             <% end %>
-           </td>
+
            <td><%= recipe.instructions %></td>
            <td><%= link_to 'Show', recipe %></td>
        <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
