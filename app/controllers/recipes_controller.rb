@@ -1,6 +1,6 @@
 class RecipesController < ApplicationController
   before_action :signed_in_user
-  before_action :set_recipe, only: [:show, :edit, :update, :destroy, :toggle_completed]
+  before_action :set_recipe, only: [:show, :edit, :update, :destroy]
   before_action :set_recipe, only: [:show, :edit, :update, :destroy]
 
   # GET /recipes
@@ -72,6 +72,6 @@ class RecipesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def recipe_params
-      params.require(:recipe).permit(:title, :completed)
+      params.require(:recipe).permit(:title, :ingredients, :instructions, :servings)
     end
 end
