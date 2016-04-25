@@ -1,10 +1,11 @@
 class RecipesController < ApplicationController
+  before_action :signed_in_user
   before_action :set_recipe, only: [:show, :edit, :update, :destroy]
 
   # GET /recipes
   # GET /recipes.json
   def index
-    @recipes = Recipe.all
+    @recipes = current_user.recipes.order(created_at: :desc)
   end
 
   # GET /recipes/1
@@ -25,6 +26,7 @@ class RecipesController < ApplicationController
   # POST /recipes.json
   def create
     @recipe = Recipe.new(recipe_params)
+    @recipe.user = current_user       # associate the new todo to the current_user
 
     respond_to do |format|
       if @recipe.save
