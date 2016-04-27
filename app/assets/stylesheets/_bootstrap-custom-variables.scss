@@ -2,12 +2,11 @@
 $body-bg: white;
 
 
-.recipes {
 
-}
 
 .title{
   text-align: center;
+  color: white;
 }
 
 .ingredients {
@@ -15,7 +14,13 @@ $body-bg: white;
   width: 650px;
   margin: 0 auto;
   margin-bottom: 30px;
-  background-color: rgba(0,0,0,.2);
+  background-color: white;
+  opacity: .7;
+  text-align: center;
+}
+
+.navigation {
+  text-align: center;
 }
 
 

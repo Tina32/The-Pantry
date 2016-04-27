@@ -8,13 +8,15 @@
 
       <%= content_tag_for(:tr, @recipes) do |recipe| %>
       <div class= "recipes">
-            <div class="title"><h1><%= recipe.title %></h1>
+            <div class="title"><h1><%= recipe.title %></h1></div>
             <div class= "ingredients"><h4>Ingredients</h4><%= recipe.ingredients %></div>
             <div class= "ingredients"><h4>Instructions</h4><%= recipe.instructions %></div>
             <div class= "ingredients"><h4>Servings</h4><%= recipe.servings %></div>
+            <div class="navigation">
             <%= link_to 'Show', recipe %>
             <%= link_to 'Edit', edit_recipe_path(recipe) %>
             <%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' } %>
+            </div>
       </div>
      <% end %>
 
