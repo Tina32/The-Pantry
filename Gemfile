@@ -36,6 +36,9 @@ gem 'bootstrap-generators', '~> 3.3.4'
 
 gem 'bcrypt', '~> 3.1.7'                # uncomment this line
 
+# Use this gem for youtube function
+gem 'youtube_addy', '~>1.0.4'
+
 group :development, :test do
   # Use pry with Rails console
   gem 'pry-rails'
