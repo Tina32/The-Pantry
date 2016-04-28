@@ -43,6 +43,8 @@ gem 'paperclip'
 
 gem 'aws-sdk'
 
+gem 'rails_12factor', group: :production
+
 group :development, :test do
   # Use pry with Rails console
   gem 'pry-rails'
