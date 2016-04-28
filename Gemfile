@@ -39,8 +39,7 @@ gem 'bcrypt', '~> 3.1.7'                # uncomment this line
 # Use this gem for youtube function
 gem 'youtube_addy', '~>1.0.4'
 
-# Use this gem for User Authentication
-gem 'devise'
+
 
 group :development, :test do
   # Use pry with Rails console
