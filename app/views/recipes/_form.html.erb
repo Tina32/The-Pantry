@@ -4,6 +4,7 @@
       <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
       <h4><%= pluralize(@recipe.errors.count, "error") %> prohibited this recipe from being saved:</h4>
 
+
       <ul>
       <% @recipe.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
