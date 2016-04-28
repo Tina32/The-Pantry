@@ -23,6 +23,9 @@ class RecipesController < ApplicationController
   def edit
   end
 
+  def notes
+  end
+
   # POST /recipes
   # POST /recipes.json
   def create
