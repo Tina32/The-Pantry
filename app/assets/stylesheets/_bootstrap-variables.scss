@@ -489,6 +489,7 @@ $jumbotron-color:                inherit !default;
 $jumbotron-bg:                   rgba(255,255,255,.7) !default;
 $jumbotron-heading-color:        text-shadow .1px .1px .1px white;
 $jumbotron-font-size:            ceil(($font-size-base * 1.5)) !default;
+$jumbotron-border:               1px dotted grey;
 
 
 //== Form states and alerts
