@@ -41,7 +41,12 @@ gem 'youtube_addy', '~>1.0.4'
 
 gem 'paperclip'
 
+gem 'aws-s3'
+
 gem 'aws-sdk'
+# gem 'aws-sdk-v1'
+# gem 'aws-sdk', '~> 2'
+
 
 gem 'rails_12factor', group: :production
 

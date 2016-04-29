@@ -37,6 +37,10 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.3)
+    aws-s3 (0.6.3)
+      builder
+      mime-types
+      xml-simple
     aws-sdk (2.3.0)
       aws-sdk-resources (= 2.3.0)
     aws-sdk-core (2.3.0)
@@ -179,12 +183,14 @@ GEM
       binding_of_caller (>= 0.7.2)
       railties (>= 4.0)
       sprockets-rails (>= 2.0, < 4.0)
+    xml-simple (1.1.5)
     youtube_addy (1.0.4)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  aws-s3
   aws-sdk
   bcrypt (~> 3.1.7)
   better_errors
