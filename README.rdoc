@@ -1,28 +1,19 @@
-== README
+The Pantry
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The Pantry is an online personal recipe book that allows user to create and save thier favorite recipes. By creating an account, the user can also edit and delete their recipes.
 
-Things you may want to cover:
+The Pantry is deployed on Heroku
 
-* Ruby version
+Technologies include:
 
-* System dependencies
+Ruby 2.2
 
-* Configuration
+Rails 4.2
 
-* Database creation
+PostgreSQL 9.4
 
-* Database initialization
+Twitter Bootstrap 3.3
 
-* How to run the test suite
+SASS 3.4
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+bootstrap-generators 3.3
