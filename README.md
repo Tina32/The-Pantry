@@ -27,7 +27,7 @@ Project Planning & User Stories - [Trello](https://trello.com/)
 
 [Paperclip](https://github.com/thoughtbot/paperclip)
 
-##Future Developsments:
+##Future Developments:
 * Install Devise with Carrierwave
 
 * Add Boostrap
