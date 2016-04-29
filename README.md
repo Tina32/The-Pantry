@@ -3,7 +3,9 @@
 ##Overview:
 **The Pantry** is an online personal recipe book application with full CRUD (Create, Read, Update, Destroy) built in Ruby on Rails. There are two models, User and Recipes. I used the paperclip gem to add photos to user profiles and photos are stored to Amazon S3. After creating an account, user can create, edit, save and delete thier favorite recipes.
 
-The Pantry is deployed on [Heroku](https://www.heroku.com/home) Heroku link: <https://the-pantry-recipes.herokuapp.com/>
+The Pantry is deployed on [Heroku](https://www.heroku.com/home)
+
+Heroku link: <https://the-pantry-recipes.herokuapp.com/>
 
 ##**Technologies Include:**
 
