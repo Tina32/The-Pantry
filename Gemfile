@@ -42,7 +42,7 @@ gem 'youtube_addy', '~>1.0.4'
 gem 'paperclip'
 
 # gem 'aws-s3'
-gem 'aws-sdk'
+gem 'aws-sdk', '< 2.0'
 # gem 'aws-sdk-v1'
 # gem 'aws-sdk', '~> 2'
 
