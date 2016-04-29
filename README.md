@@ -34,3 +34,5 @@ Project Planning & User Stories - [Trello](https://trello.com/)
 
 * Install Sendgrid to share recipes between users
 
+* Add Notes model
+
