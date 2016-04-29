@@ -15,6 +15,8 @@ Text Editor- Sublime Text 3
 
 Project Planning & User Stories - [Trello](https://trello.com/)
 
+Trello Link: <https://trello.com/b/rchUlKSS/project-two-recipe-app>
+
 [Ruby 2.2](https://www.ruby-lang.org/en/)
 
 [Rails 4.2](http://rubyonrails.org/)
